@@ -1,0 +1,61 @@
+.header {
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../asset/img/header_desktop.png);
+    background-repeat: no-repeat;
+
+    .banner{
+        min-height: 420px;
+    }
+
+    .menu-bg{
+        min-height: 58px;
+        background: #ff0000;
+        position: relative;
+    }
+
+    .menu{
+        top: 0;
+        ul{
+            a{
+                display: block;
+            }
+
+            li{
+                color: #fff;
+                
+                a:hover{
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+
+    .banner-title{
+        min-width: 460px;
+        background: #f00;
+        color: #fff;
+    }
+
+    .main-menu{
+        background: #f00;
+        overflow: hidden;
+
+        a:hover{
+            background: #f00;
+        }
+    }
+
+    .hamburger-menu{
+        display: block;
+        float: right;
+    }
+
+    .menu-show{
+        min-height: 165px;
+    }
+
+    .block-md{
+        display: block;
+    }
+}

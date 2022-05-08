@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.bigbox{
+    width: 300px;
+    height: 300px;
+    background-color: #f5b199;
+}
+.smallbox{
+     width: 100px;
+    height: 100px;
+    background-color: #44617b;
+}
+
+/*三種方法*/
+/* flex置中法 */
+.big{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* position相對絕對位置置中法 */
+.big2{
+    position: relative;
+
+}
+.small2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* margin推推置中法 */
+.small3{
+    display:inline-block;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+}

@@ -1,0 +1,12 @@
+/* $變數名:字串、數字、顏色、布林、空值、運算*/
+$link-color:#ff0000;
+$font-m:15px;
+$font-l: $font-m*1.2;
+$font-family-base: "Helvetica,Arial,sans-serif";
+
+
+.header{
+    font-size: $font-l;
+    color: $link-color;
+    font-family: $font-family-base;
+}
