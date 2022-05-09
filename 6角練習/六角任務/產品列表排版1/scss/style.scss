@@ -10,7 +10,7 @@ $fz24:24px;
 
 
 .warp{
-    width: 960px;
+    width: 940px;
     margin: 0 auto;
 
     header{
@@ -44,17 +44,13 @@ $fz24:24px;
                     text-align: end;
                 }
             }
-
-            li+li{
-                margin-left: 20px;
-            }
         }
     }
 
     .photo{
-        margin-bottom: 30px;
+        margin-bottom: 60px;
         .banner{
-            width: 960px;
+            width: 940px;
             height: 496px;
         }
     }
@@ -63,33 +59,38 @@ $fz24:24px;
         display: flex;
         justify-content: space-between;
 
-        .list{
+        .menu-list{
             width: 300px;
-            text-align: center;
 
-            li{
-                border: 1px solid $border-color;
+            .list-top{
+                padding: 16px 0;
+                font-size: $fz24;
                 font-weight: bold;
-                a{
-                    display: block;
-                    padding: 16px 0;
-                    font-size: $fz24;
-                    color:$text-color;
-                    text-decoration: none;
-                }
+                background-color: $bg-color;
+                color: #fff;
+                text-align: center;
+            }
+    
+            .list{
+                text-align: center;
+    
+                li{
 
-                .list-top{
-                    font-size: $fz24;
-                    padding: 16px 0;
-                    background-color: $bg-color;
-                    color: #fff;
-                }
-
-                a:hover{
-                    background-color: $subbg-color;
+                    border: 1px solid $border-color;
+                    font-weight: bold;
+                    a{
+                        display: block;
+                        padding: 16px 0;
+                        font-size: $fz24;
+                        color:$text-color;
+                        text-decoration: none;
+                    }
+    
+                    a:hover{
+                        background-color: $subbg-color;
+                    }
                 }
             }
-
         }
 
         .menu{
@@ -154,35 +155,36 @@ $fz24:24px;
                     }
 
                     .sbumenu{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 56px;
+                        font-size: $fz20;
+                        text-align: center;
+                        color: $text-color;
+                        border: 1px solid $border-color;
 
-                        ol{
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
+                        .name{
+                            width: 171px;
+                            height: 56px;
+                            line-height: 56px;
 
-                            li{
-                                border: 1px solid $border-color;
-
-                                a{
-                                    display: block;
-                                    text-align: center;
-                                    font-size: $fz20;
-                                    line-height: 56px;
-                                    text-decoration: none;
-                                    color: $text-color;
-                                }
-
-                                .name{
-                                    width: 171px;
-                                }
-
-                                .money{
-                                    width: 125px;
-                                    font-weight: bold;
-                                }
-                                
+                            a{
+                                display: block;
+                                text-decoration: none;
+                                color: $text-color;
                             }
                         }
+
+                        .money{
+                            display: block;
+                            height: 56px;
+                            width: 125px;
+                            font-weight: bold;
+                            border-left: 1px solid $border-color;
+                            line-height: 56px;
+                        }
+
                     }
 
                     .cart{
@@ -191,6 +193,7 @@ $fz24:24px;
                         text-decoration: none;
                         color: $text-color;
                         font-size: 24px;
+                        font-weight: bold;
                         line-height: 65px;
                         border: 1px solid $border-color;
                         background-color: $subbg-color;
@@ -206,5 +209,47 @@ $fz24:24px;
             }
         }
 
+    }
+
+    .arrow{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 60px;
+        
+        ol{
+            display: flex;
+
+            li{
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                line-height: 60px;
+                font-size: $fz20;
+                border: 1px solid $border-color;
+
+                a{
+                    display: block;
+                    text-decoration: none;
+                    color: $text-color;
+
+                    img{
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            li:hover{
+                background-color: $bg-color;
+
+                a{
+                    color: #fff;
+
+                    img{
+                        filter: brightness(100);
+                    }
+                }
+
+            }
+        }
     }
 }
